@@ -367,12 +367,26 @@ blockquote {
     /* can simply choose italic b/c we included with google fonts at <head> */
     font-style: italic;
     line-height: 145%;
+    position: relative;
+    margin-top: 40px;
 }
 
 blockquote:before {
     display: block;
-    content: "A";
-    size: 400%;
+    /* css-tricks.com/snippets/html/glyphs */
+    content: "\201C"; 
+    font-size: 400%;
+    position: absolute;
+    top: 0;
+    left: -8px;
+    
+}
+
+blockquote:after {
+    display: block;
+    content:"\201D";
+    font-size: 400%;
+    padding-left: 315px;
 }
 
 cite {
