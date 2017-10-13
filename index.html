@@ -18,6 +18,7 @@
                 <!-- to center everything inside of nav, use .row -->
                 <div class="row">
                     <img src="resources/img/logo-white.png" alt="omnifood logo" class="logo">
+                    <img src="resources/img/logo.png" alt="omnifood logo" class="logo-black">
                     <ul class="main-nav">
                         <li><a href="#">Food delivery</a></li>
                         <li><a href="#">How it works</a></li>
@@ -28,14 +29,14 @@
             </nav>
                 <div class="jumbotron-text-box">
                     <h1>Goodbye junk food. <br>Hello healthy meals.</h1>
-                    <a class="btn btn-full" href="#">I'm hungry</a>
-                    <a class="btn btn-ghost" href="#">Show me more</a>
+                    <a id="hungry-button" class="btn btn-full" href="#">I'm hungry</a>
+                    <a id ="show-more-button" class="btn btn-ghost" href="#">Show me more</a>
                 </div>
         </header>
         
         <!-- SECTION: FEATURES -->
         
-        <section class="section-features">
+        <section id="section-features" class="section-features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food</h2>
                 <p class="long-copy">
@@ -412,5 +413,11 @@
             </div>
         </footer>
       
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <!-- Our script MUST be the last script we call -->
+        <script src="resources/js/scripts.js"></script>
+        
     </body>
 </html>

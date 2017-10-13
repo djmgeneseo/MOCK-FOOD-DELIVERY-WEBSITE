@@ -12,6 +12,7 @@
     .row { padding: 0 2%; }
     .form-bg {
         border: none;
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
 }
