@@ -1,7 +1,7 @@
 $(document).ready(function() {
    
     /*------ Sticky navigation ------*/
-    $('#section-features').waypoint(function(direction) {
+    $('.js--sticky-nav-waypoint').waypoint(function(direction) {
        if (direction === 'down') {
            $('nav').addClass('sticky');
        } else {
@@ -12,11 +12,11 @@ $(document).ready(function() {
     });
     
     /*------ Scroll-on buttons ------*/
-    $('#hungry-button').click(function () {
+    $('.js--hungry-button').click(function () {
         $('html, body').animate({scrollTop: $('.section-plans').offset().top}, 1000)
     });
     
-    $('#show-more-button').click(function () {
+    $('.js--show-more-button').click(function () {
         $('html, body').animate({scrollTop: $('.section-features').offset().top}, 1000)
     });
     
@@ -44,6 +44,55 @@ $(document).ready(function() {
         window.location.hash = hash;
       });
     } // End if
+    });
+    
+    /*------ Animations on Scroll ------*/
+    $('.js--animation-waypoint-features').waypoint(function(direction){
+        $('.js--animation-waypoint-features').addClass('animated fadeIn');
+    }, {
+        offset: '70%'
+    });
+    
+    $('.js--animation-waypoint-phone').waypoint(function(direction){
+        $('.js--animation-waypoint-phone').addClass('animated slideInUp');
+    }, {
+        offset: '50%'
+    });
+    
+    $('.js--animation-waypoint-quotes-1').waypoint(function(direction){
+        $('.js--animation-waypoint-quotes-1').addClass('animated swing');
+    }, {
+        offset: '70%'
+    });
+    
+    $('.js--animation-waypoint-quotes-2').waypoint(function(direction){
+        $('.js--animation-waypoint-quotes-2').addClass('animated swing');
+    }, {
+        offset: '70%'
+    });
+    
+    $('.js--animation-waypoint-quotes-3').waypoint(function(direction){
+        $('.js--animation-waypoint-quotes-3').addClass('animated swing');
+    }, {
+        offset: '70%'
+    });
+    
+    $('.js--animation-waypoint-plan-1').waypoint(function(direction){
+        $('.js--animation-waypoint-plan-1').addClass('animated bounceIn');
+    }, {
+        offset: '70%'
+    });
+    
+    $('.js--animation-waypoint-plan-2').waypoint(function(direction){
+        $('.js--animation-waypoint-plan-2').addClass('animated bounceIn');
+    }, {
+        offset: '70%'
+    });
+    
+    $('.js--animation-waypoint-form').waypoint(function(direction){
+        $('.js--animation-waypoint-form').addClass('animated bounceInRight');
+    }, {
+        offset: '70%'
     });
     
 });

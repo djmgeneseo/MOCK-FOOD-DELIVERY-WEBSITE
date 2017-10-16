@@ -285,8 +285,10 @@ header {
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.98);
+    -webkit-box-shadow: 0 2px 2px #f0f0f0;
     box-shadow: 0 2px 2px #f0f0f0;
     z-index: 9999;
+    -webkit-transition: 250ms;
     transition: 250ms;
 }
 
@@ -297,6 +299,7 @@ header {
     border-bottom: none;
     padding: 5px 0;
     color: #555;
+    -webkit-transition: 200ms;
     transition: 200ms;
 }
 
@@ -706,3 +709,26 @@ footer {
 .social-icons li i:active {
     color: #fff;
 }
+
+/* ------------------------------------------- */
+/* ------- SCROLL ANIMATIONS ------- */
+/* ------------------------------------------- */
+
+.js--animation-waypoint-features,
+.js--animation-waypoint-phone,
+.js--animation-waypoint-quotes-1,
+.js--animation-waypoint-quotes-2,
+.js--animation-waypoint-quotes-3,
+.js--animation-waypoint-plan-1,
+.js--animation-waypoint-plan-2,
+.js--animation-waypoint-form { opacity: 0; }
+
+.js--animation-waypoint-features.animated, 
+.js--animation-waypoint-phone.animated,
+.js--animation-waypoint-quotes.animated,
+.js--animation-waypoint-quotes-1.animated,
+.js--animation-waypoint-quotes-2.animated,
+.js--animation-waypoint-quotes-3.animated, 
+.js--animation-waypoint-plan-1.animated,
+.js--animation-waypoint-plan-2.animated,
+.js--animation-waypoint-form.animated { opacity: 1; }
