@@ -19,12 +19,19 @@
 
 
 /* ------------------------------------------------------------------ */
-/* Small tablets to big tablets: 768-1023px */
+/* Small tablets to big tablets: 823-1023px */
 /* ------------------------------------------------------------------ */
 
 @media only screen and (max-width: 1023px) {
     body { font-size: 18px; }
     section { padding: 60px 0; }
+    
+    .sticky .main-nav {
+        float: none;
+        margin-left: 100px;
+        font-size: 80%;
+        font-weight: 400;
+    }
     
     .long-copy {
         width: 80%;
@@ -66,6 +73,7 @@
         margin: 0; 
         width: 100%;
     }    
+    .sticky .main-nav { font-size: 75%; }
     
 }
 
@@ -75,6 +83,8 @@
 /* ------------------------------------------------------------------ */
 
 @media only screen and (max-width: 767px) {
+    
+    
     body { font-size: 16px; }
     
     /* Even less vertical whitespace */
@@ -92,6 +102,8 @@
     }
     
     .main-nav { display: none; }
+    
+    
     
     h1 { font-size: 180%; }
     h2 { font-size: 150%;}

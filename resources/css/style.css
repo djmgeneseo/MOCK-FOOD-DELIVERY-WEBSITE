@@ -273,6 +273,10 @@ header {
     padding-bottom: 13px;
 }
 
+.back-to-top {
+    display: none;
+}
+
 /* Sticky navigation */
 .sticky {
     /* irrespective of scrolling */
@@ -310,6 +314,10 @@ header {
     width: auto;
     float: left;
     margin: 6px 0;
+}
+
+.sticky .back-to-top {
+    display: inline-block;
 }
 
 /* ------------------------------------------- */
