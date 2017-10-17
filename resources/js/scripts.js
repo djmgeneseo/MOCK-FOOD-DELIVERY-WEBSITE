@@ -94,5 +94,14 @@ $(document).ready(function() {
     }, {
         offset: '70%'
     });
+   
+    /*------ Mobile Navigation ------*/
+    $('.js--nav-icon').click(function() {
+       var nav = $('.js--main-nav');
+        /* Open and close sticky and main */
+        nav.slideToggle(200);
+    });
+    
+    /* js--jumbo-text */
     
 });
