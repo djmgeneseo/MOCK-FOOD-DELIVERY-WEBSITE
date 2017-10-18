@@ -7,6 +7,16 @@ $(document).ready(function() {
        } else {
            $('nav').removeClass('sticky');
        }
+        
+        /* Close all navibars on mobile when sticky appears/disappears  */
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+        
+        if(icon.hasClass('ion-android-close')) {
+            nav.slideToggle(0);
+            icon.removeClass('ion-android-close');
+            icon.addClass('ion-navicon');
+        }
     }, {
            offset: '70px;'
     });
@@ -97,11 +107,18 @@ $(document).ready(function() {
    
     /*------ Mobile Navigation ------*/
     $('.js--nav-icon').click(function() {
-       var nav = $('.js--main-nav');
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
         /* Open and close sticky and main */
         nav.slideToggle(200);
+        if (icon.hasClass('ion-navicon')) {
+            icon.removeClass('ion-navicon');
+            icon.addClass('ion-android-close');
+        } else {
+            icon.removeClass('ion-android-close');
+            icon.addClass('ion-navicon');
+        }
+        
     });
-    
-    /* js--jumbo-text */
     
 });
