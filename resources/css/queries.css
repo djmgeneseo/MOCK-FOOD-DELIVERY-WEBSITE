@@ -121,6 +121,7 @@
         border: none;
         padding: 8px 0;
         font-size: 100%;
+        -webkit-transition: 175ms;
         transition: 175ms;
     }
     
