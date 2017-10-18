@@ -17,7 +17,6 @@
     }
 }
 
-
 /* ------------------------------------------------------------------ */
 /* Small tablets to big tablets: 823-1023px */
 /* ------------------------------------------------------------------ */
@@ -52,7 +51,7 @@
     
     .city-feature { font-size: 90%; }
     
-    .contact-form { width: 80%; }
+    .contact-form { width: 90%; }
 }
 
 
@@ -83,7 +82,6 @@
 /* ------------------------------------------------------------------ */
 
 @media only screen and (max-width: 767px) {
-    
     
     body { font-size: 16px; }
     
@@ -195,22 +193,83 @@
     
     .works-step:last-of-type { margin-bottom: 20px; }
     
+    /* Cities */
+    .city-box-1,
+    .city-box-2,
+    .city-box-3,
+    .city-box-4 {
+        border: 1.8px solid #f4f4f4;
+        -webkit-box-shadow: 2px 3px 5px #ebebeb;
+        box-shadow: 2px 3px 5px #ebebeb;
+        padding: 45px 0 45px 0; 
+    }
+    
     .section-cities img { 
         padding: 0;
+        padding-bottom: 25px;
         width: 80%;
         margin: auto 10% auto 10%;
         height: auto;
     }
+    
     .section-cities h3 { 
         text-align: center; 
         font-size: 150%;
     }
     
+    .section-cities h3:after {
+        display: block;
+        height: 2px;
+        background-color: #ebebeb;
+        content: " ";
+        width: 150px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
     .city-feature { 
-        font-size: 100%;
+        font-size: 120%;
         padding: 0 20% 0 35%;
     }
     
+    /* Plans */
+
+    .plan-box {
+        width: 60%;
+        margin-left: 20%;
+        /* x axis offset, y axis offset, blur, color */
+        -webkit-box-shadow: 2px 2px 2px #e2e2e2;
+        box-shadow: 2px 2px 2px #e2e2e2;
+    }
+
+    .plan-box div {
+        padding: 15px;
+        border-bottom: 1px solid #ebebeb;
+        font-size: 100%;
+    }
+    
+    /* Map and forms */
+    .map-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .map {
+        width: 100%;
+        height: 580px;
+        position: relative;
+        z-index: 0;
+    }
+
+    .form-box {
+        height: auto;
+        width: 100%;
+        padding-top: 30px;
+        position: relative;
+    }
+
+
     
 /* ------------------------------------------------------------------ */
 /* shrink margin between seend button and textarea in section-form */

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   
+    
     /*------ Sticky navigation ------*/
     $('.js--sticky-nav-waypoint').waypoint(function(direction) {
        if (direction === 'down') {
@@ -119,6 +119,25 @@ $(document).ready(function() {
             icon.addClass('ion-navicon');
         }
         
+    });
+    
+    /*------ gMaps ------*/
+    /* appended 'new Gmaps...' with 'var map = ...'*/
+    var map = new GMaps({
+          div: '#map',
+          lat: 40.6859799,
+          lng: -73.55,
+          /* Initial zoom is 15 */
+          zoom: 13
+    });
+   
+    map.addMarker({
+      lat: 40.6859799,
+      lng: -73.628582,
+      title: 'Lisbon',
+      infoWindow: {
+          content: '<p>My Current College!</p>'
+        }
     });
     
 });
