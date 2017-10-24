@@ -123,6 +123,9 @@
         transition: 175ms;
     }
     
+    /* When in mobile and nav is normal, "back to top" option does NOT display */
+    .main-nav li:last-child {display: none;}
+    
     .main-nav li a:hover,
     .main-nav li a:active {
         border-bottom: 2px solid #e67e22;
@@ -145,6 +148,9 @@
         -webkit-transition: 175ms;
         transition: 175ms;
     }
+    
+    /* When in mobile and nav is sticky, "back to top" option displays */
+    .sticky .main-nav li:last-child {display: inline-block;}
 
     .sticky .main-nav li a:hover,
     .sticky .main-nav li a:active { padding-bottom: 9px; }
@@ -163,11 +169,19 @@
     h1 { font-size: 180%; }
     h2 { font-size: 150%;}
     
+    /* features */
+    
     .long-copy {
         width: 100%;
         margin-left: 0%;
     }
     
+    .section-features .icon-big {
+        display: inline;
+        margin-left: 47%;
+    }
+    
+    /* how it works */
     .app-screen { width: 40%; }
     
     .steps-box:first-child {

@@ -107,7 +107,7 @@ $(document).ready(function() {
    
     /*------ Mobile Navigation ------*/
     $('.js--nav-icon').click(function() {
-        var nav = $('.js--main-nav');
+        var nav = $('.main-nav');
         var icon = $('.js--nav-icon i');
         /* Open and close sticky and main */
         nav.slideToggle(200);
