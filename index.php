@@ -338,12 +338,25 @@
         <div class="map-box">    
             <div id="map" class="map"></div>
             
-            <div class="form-box js--animation-waypoint-form">
+            <div class="form-box js--animation-waypoint-form" id="form">
                 <div class="row form-bg">
                     <h2>We're happy to hear from you!</h2>
                     <div class="row">
-                        <form method="post" action="#" class="contact-form">
+
+                        <form method="post" action="mailer.php" class="contact-form">
+                            <div class = "row">
+                                <?php
+                                    if($_GET['success'] == 1) {
+                                        echo "<div class =\"form-message success\">Your message has been sent!</div>";
+                                    }
+                        
+                                    if($_GET['success'] == -1) {
+                                        echo "<div class =\"form-message error\">Something went wrong! Please try again.</div>";
+                                    }
+                                ?>
+                            </div>
                             <div class="row">
+                                
                                 <div class="col span-1-of-3">
                                     <!-- 'for': clicking "Name" now selects "name" field -->
                                     <label for="name">Name</label>
