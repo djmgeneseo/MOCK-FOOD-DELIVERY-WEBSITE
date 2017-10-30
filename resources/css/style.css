@@ -638,21 +638,21 @@ input[type=checkbox] {
 
 .map-box {
     width: 100%;
-    height: 630px;
+    height: 580px;
     position: relative;
 }
 
 .map {
     width: 100%;
-    height: 630px;
+    height: 580px;
     position: relative;
     z-index: 0;
 }
 
 .form-box {
-    height: 630px;
+    height: 580px;
     width: 50%;
-    padding-top: 4.5%;
+    padding-top: 50px;
     position: absolute;
     top: 0;
     right: 0;
@@ -661,6 +661,8 @@ input[type=checkbox] {
     z-index: 10;
 }
 
+/*
+**FOR PHP** 
 .form-message {
     width: 70%;
     margin: 0 auto;
@@ -673,6 +675,8 @@ input[type=checkbox] {
 .success { background-color: rgba(36, 235, 0, 0.6); }
 
 .error { background-color: rgba(255, 0, 0, 0.6); }
+**FOR PHP**
+*/
 
 /* ------------------------------------------- */
 /* ------- FOOTER ------- */

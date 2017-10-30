@@ -1,1 +1,0 @@
-After reszing browser multiple times, during which the navi is open sometimes and closed others, the navi li elements fail to appear. Could be problem with unordered list element (.main-navi)
